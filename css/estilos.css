@@ -1,0 +1,237 @@
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+ul,ol{
+	list-style: none;
+}
+
+body{
+	background: #0B75C6;
+	font-family: Open sans;
+	
+}
+h1{
+	color:rgb(255, 255, 255);
+	font: bold;
+}
+h2{
+	color:rgb(255, 255, 255);
+	font: bold;
+}
+h4{
+	color:rgb(255, 255, 255);
+	font: bold;
+}
+.navegacion{
+	width:100%;
+	margin: 0px auto;
+	background: #20B4EB;
+}
+
+.navegacioin ul{
+	list-style: none;
+}
+.menu > li{
+	position: relative;	
+	display: inline-block;
+}
+.menu > li > a{
+	display: block;
+	padding: 15px 20px;
+	color: #353535;
+	font-family: "open sans";
+	text-decoration: none;
+
+}
+
+.menu li a:hover{
+color:#CE7D35;
+transition: all .3s;
+}
+
+/*submenu*/
+.submenu{
+position: absolute;
+background: #333333;
+width: 120%;
+visibility: hidden;
+opacity: 0;
+transition: opacity 1.3s;
+}
+.submenu li a {
+	display: block;
+	padding: 15px;
+	color:#ffff;
+	font-family: "open sans";
+	text-decoration: none;
+}
+.menu li:hover .submenu{
+	visibility: visible;
+	opacity: 1;
+}
+
+
+/*SLIDER*/
+.slideshow{
+	width: 80%;
+	position: relative;
+}
+
+.slider li, ul{
+	width: 80%;
+}
+
+.slider li{
+	overflow: hidden;
+}
+
+.slider li img{
+	width: 80%;
+}
+
+.slider .caption{
+	position: absolute;
+	width: 80%;
+	height: 80%;
+	top: 0;
+	left: 0;
+	padding: 15px 50px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	text-align: center;
+	color: #fff;
+	z-index: 1;
+}
+
+.slider .caption h1{
+	font-size: 50px;
+}
+
+.slider .caption p{
+	margin-top: 10px;
+	font-size: 20px;
+}
+
+.pagination{
+	position: absolute;
+	top: 102%;
+	width: 100%;
+
+	display: flex;
+	justify-content: center;
+}
+
+.pagination li{
+	font-size: 20px;
+	margin: 2px 5px;
+	color: #858585;
+	cursor: pointer;
+}
+
+.left, .right{
+	position: absolute;
+	top: 0;
+	height: 100%;
+
+	display: flex;
+	align-items: center;
+
+	color: #fff;
+	font-size: 35px;
+	cursor: pointer;
+	z-index: 2;
+}
+.profile{
+	margin-left:0px;
+}
+
+.left{
+	left: 10px;
+}
+
+.right{
+	right: 10px;
+}
+
+
+@media screen and (max-width: 600px){
+	.slider .caption p{
+		display: none;
+	}
+
+	.slider .caption h1{
+		font-size: 35px;
+	}
+
+	.left, .right{
+		font-size: 30px;
+	}
+
+	.slider li img{
+		width: 600px;
+	}
+
+	.pagination{
+		display: none;
+	}
+}
+/* cards baner one*/
+.cards-banner-one{
+	width: 100%;
+	height:175px;
+	background: #22D095 /*url('./img/circulo.jpg')*/;
+	margin-bottom: 40px ;
+
+}
+
+.cards-banner-one .content{
+	width: 10%;
+	padding: 10px 0 0 30px;
+	color: #ffff;
+	height: 0px;
+}
+
+.cards-banner-one p,
+.cards-banner-one h2{
+	margin:0px 0 20px 0;
+}
+
+/*social*/
+
+.social{
+	margin:50px;
+}
+.social p{
+	text-align: center;
+	font-size: 30px ;
+	margin-bottom: 20PX;
+
+}
+.links{
+	margin:0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.links a{
+	margin:0 30px;
+}
+.links i{
+	font-size:3rem;
+}
+div .mision{
+	background: #1B8BF4;
+}
+.list{
+	text-decoration: none;
+}
